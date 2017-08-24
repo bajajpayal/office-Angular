@@ -1,14 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
+import { appRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from "@angular/http";
+import { HomeComponent } from './home/home.component';
+import { DirectoryComponent } from './directory/directory.component';
+import { FilterPipe } from './filter.pipe';
+
+import 'rxjs/add/operator/map';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    DirectoryComponent,
+    FilterPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    appRoutingModule,
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

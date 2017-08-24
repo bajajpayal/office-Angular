@@ -1,0 +1,19 @@
+<form >
+<div id="main">
+<label>Enter Name</label>
+<input [(ngModel)]="name"  name="name" type="text"><br/><br/>
+<label>Enter Password</label>
+<input [(ngModel)]="password" name="password" type="text"><br/><br/>
+<label>Enter Email</label>
+<input name="email" [(ngModel)]="email" type="text"><br/><br/>
+<label>Enter PhoneNo</label>
+<input name="phoneNo" [(ngModel)]="phoneNo" type="text"><br/><br/>
+
+
+</div>
+
+<div>
+
+  <button (click)="submitData(name,password,email,phoneNo)">SubmitData</button>
+</div>
+</form>

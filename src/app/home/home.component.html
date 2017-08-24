@@ -1,0 +1,19 @@
+<form novalidate [formGroup]="form">
+
+ <input type="text" formControlName="firstname" placeholder="enter firstname">
+  <input type="text" formControlName="lastname" placeholder="enter lastname">
+
+  <div>
+      <input formControlName="username" placeholder="enter username">
+
+      <input  formControlName="password" placeholder="enter password">
+
+  </div>
+<div>
+
+  <button (click)="clickme()">clcik</button>
+</div>
+
+</form>
+
+<p> Form : {{form.value | json}}</p>
