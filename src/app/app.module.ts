@@ -8,6 +8,7 @@ import { HttpModule } from "@angular/http";
 import { HomeComponent } from './home/home.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { FilterPipe } from './filter.pipe';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import 'rxjs/add/operator/map';
 
@@ -23,7 +24,8 @@ import 'rxjs/add/operator/map';
     appRoutingModule,
     FormsModule,
     HttpModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    Ng2SmartTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
